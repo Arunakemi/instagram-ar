@@ -1,2 +1,2 @@
-# instagram-ar
-Guithub page to upload instagram AR projects
+# Instagram AR repo
+Repo I use to upload instagram post AR experiences.
