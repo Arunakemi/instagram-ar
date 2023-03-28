@@ -11,12 +11,13 @@
       <a-assets>
         <a-asset-item id="cosas-glb" src="./modelos/cosas.glb"></a-asset-item>
         <a-asset-item id="burbujas-glb" src="./modelos/burbujas_esquina.glb"></a-asset-item>
-  
+        <img id="base-img" src="./imagenes/base.jpg">
       </a-assets>
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-entity position="0 0 0" mindar-image-target="targetIndex: 0">
-        <a-entity shadow gltf-model="#cosas-glb"    scale="0.005 0.005 0.005"  rotation="90 0 0" position="0 0 0" animation-mixer="clip:*; loop:true;"></a-entity>
-        <a-entity shadow gltf-model="#burbujas-glb" scale="0.005 0.005 0.005"  rotation="90 0 0" position="0 0 0" animation-mixer="clip:*; loop:true;"></a-entity>
+        <a-plane src="#base-img" height="1" width="1" position="0 0 0" rotation="0 0 0"></a-plane>
+        <a-entity gltf-model="#burbujas-glb" scale="0.0025 0.0025 0.0025"  rotation="90 0 0" position="0 0 0" animation-mixer="clip:*; loop:pingpong;"></a-entity>
+        <a-entity gltf-model="#cosas-glb"    scale="0.0025 0.0025 0.0025"  rotation="90 0 0" position="0 0 0" animation-mixer="clip:*; loop:pingpong;"></a-entity>
       </a-entity>
     </a-scene>
   </body>
