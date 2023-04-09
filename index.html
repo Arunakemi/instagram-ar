@@ -10,7 +10,7 @@
     <a-scene mindar-image="imageTargetSrc: ./targets.mind; filterMinCF:0.0001; filterBeta: 1; uiScanning:no" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" renderer="colorManagement: true">
       <a-assets>
         <a-asset-item id="cosas-glb" src="./modelos/cosas.glb"></a-asset-item>
-        <a-asset-item id="mono-glb" src="./modelos/mono.glb"></a-asset-item>
+        <a-asset-item id="mono-fbx" src="./modelos/mono.fbx"></a-asset-item>
         <a-asset-item id="burbujas-glb" src="./modelos/burbujas_esquina.glb"></a-asset-item>
         <img id="base-img" src="./imagenes/base.jpg">
       </a-assets>
@@ -21,7 +21,7 @@
         <a-plane src="#base-img" shadow height="1" width="1" position="0 0 0" rotation="0 0 0"></a-plane>
         <a-entity gltf-model="#burbujas-glb" shadow scale="0.0015 0.0015 0.0015"  rotation="90 0 0" position="0 0 0" animation-mixer="clip:*; loop:pingpong;"></a-entity>
         <a-entity gltf-model="#cosas-glb"    shadow scale="0.0015 0.0015 0.0015"  rotation="90 0 0" position="0 0 0" animation-mixer="clip:*; loop:pingpong;"></a-entity>
-        <a-entity gltf-model="#mono-glb"     shadow scale="0.0015 0.0015 0.0015"  rotation="90 0 0" position="0 0 0" animation-mixer="clip:*; loop:pingpong;"></a-entity>
+        <a-entity gltf-model="#mono-fbx"     shadow scale="0.0015 0.0015 0.0015"  rotation="90 0 0" position="0 0 0" animation-mixer="clip:*; loop:pingpong;"></a-entity>
       </a-entity>
     </a-scene>
   </body>
